@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    height: 1rem;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 0.5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(217, 217, 227, 0.8);
+    border-color: rgb(255, 255, 255);
+    border-radius: 9999px;
+    border-width: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(236, 236, 241);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background-color: rgb(86, 88, 105);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(172, 172, 190);
+}
+.radar {
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 600px;
+    max-width: 1000px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.tab-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+  }
+
+.link {
+    color: blue; /* 设置链接文本颜色 */
+    text-decoration: underline; /* 添加下划线以表示链接 */
+    cursor: pointer; /* 将鼠标指针更改为手形以表示链接 */
+}
+
+.link:hover {
+    color: darkblue; /* 鼠标悬停时更改链接文本颜色 */
+}
