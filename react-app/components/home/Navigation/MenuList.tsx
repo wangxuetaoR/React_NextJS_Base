@@ -8,43 +8,43 @@ export default function MenuList() {
             id: "1",
             title: "部門マスター",
             type: "マスター管理",
-            url: "/master/department"
+            url: "/main/master/department"
         },
         {
             id: "2",
             title: "役割マスター",
             type: "マスター管理",
-            url: "/master/role"
+            url: "/main/master/role"
         },
         {
             id: "3",
             title: "スキルマスター",
             type: "マスター管理",
-            url: "/master/skill"
+            url: "/main/master/skill"
         },
         {
             id: "4",
             title: "スキル種別マスター",
             type: "マスター管理",
-            url: "/master/skillType"
+            url: "/main/master/skillType"
         },
         {
             id: "5",
             title: "契約種別マスター",
             type: "マスター管理",
-            url: "/master/ContractType"
+            url: "/main/master/ContractType"
         },
         {
             id: "6",
             title: "ユーザー一覧",
             type: "社員管理",
-            url: "/syain/user_list"
+            url: "/main/syain/user_list"
         },
         {
             id: "7",
             title: "スキルレーダー",
             type: "スキル管理",
-            url: "/syain/user_skill"
+            url: "/main/syain/user_skill"
         }
     ])
     const groupList = useMemo(() => {

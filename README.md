@@ -10,4 +10,4 @@ $ npm run dev
 # 方法②、dockerで起動
 # GitBashで以下コマンドを実行する
 $ cd /C/workspace/React_NextJS_Base
-$ /c/workspace/react_app/deploy.sh
+$ /c/workspace/React_NextJS_Base/deploy.sh
