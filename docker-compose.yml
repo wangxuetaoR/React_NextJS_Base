@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  centos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: centos
+    restart: unless-stopped
