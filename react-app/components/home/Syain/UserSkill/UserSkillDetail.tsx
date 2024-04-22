@@ -8,6 +8,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Switch from "react-switch";
 
 import 'react-tabs/style/react-tabs.css';
+import { BACKEND_HOST } from "@/app/constants";
 
 // スキル種別の型
 interface SkillType {
@@ -87,7 +88,7 @@ export default function UserSkillDetail() {
     useEffect(() => {
         const skillTypesData = async () => {
             try {
-                const response = await fetch('https://127.0.0.1:8080/api/skilltypes', {
+                const response = await fetch(`${BACKEND_HOST}/api/skilltypes`, {
                     method: 'GET',
                 });
                 if (!response.ok) {
@@ -107,7 +108,7 @@ export default function UserSkillDetail() {
     useEffect(() => {
         const skillsData = async () => {
             try {
-                const response = await fetch('https://127.0.0.1:8080/api/skills', {
+                const response = await fetch(`${BACKEND_HOST}/api/skills`, {
                     method: 'GET',
                 });
                 if (!response.ok) {
@@ -128,7 +129,7 @@ export default function UserSkillDetail() {
     useEffect(() => {
         const userskillsData = async () => {
             try {
-                const response = await fetch('https://127.0.0.1:8080/api/users', {
+                const response = await fetch(`${BACKEND_HOST}/api/users`, {
                     method: 'GET',
                 });
                 if (!response.ok) {
